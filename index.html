@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box-Shadow/Border-Generator</title>
+  </head>
+  <body>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="nav-container">
+      <div class="nav-bar">
+        <div class="menu">
+          <h3 class="logo">DRELA<span>BLAZE</span></h3>
+          <div class="hamburger">
+            <div id="bar" class="bar">
+              <img id="hamburger-img" src="burger-bar.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-js"></div>
+    <div id="container" class="container">
+      <img src="dami-no-bg.png" alt="dami" class="dami-img" id="dami-img" />
+      <!-- <div class="container-text">
+        <h1 class="title">NAME COLLECTION DATA</h1>
+        <input type="text" class="user-input" id="user-input-js" />
+        <label for="user-input-js">Enter Your Name</label>
+        <button class="submit-btn" id="submit-btn-js">Submit</button>
+        <p class="name-display">
+          Your name is shrotly written as:
+          <span class="name" id="name-js"></span>
+        </p>
+      </div> -->
+    </div>
+
+    <div class="modal-alert" id="modal-alert-js">
+      Enter Your Name
+      <button id="close-btn-js" class="close-btn" name="no-name"></button>
+    </div>
+    <div class="modal-alert more-letters" id="modal-alert-js">
+      Name must be more than 4 letters
+      <button
+        id="close-btn-js"
+        class="close-btn"
+        name="less-letter-name"
+      ></button>
+    </div>
+
+    <div class="image-slider">
+      <div>
+        <label for="border">Border</label>
+        <input
+          type="range"
+          name="border"
+          min="0"
+          max="200"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div>
+        <label for="border">Box-Shadow-Spread</label>
+        <input
+          type="range"
+          name="shadow-blur"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div>
+        <label for="border">Horizontal-Shadow-Offset</label>
+        <input
+          type="range"
+          name="shadowOffSet-right"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div>
+        <label for="border">Vertical-Shadow-Offset</label>
+        <input
+          type="range"
+          name="shadowOffSet-down"
+          min="0"
+          max="100"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div>
+        <label for="img-blur">Blur</label>
+        <input
+          type="range"
+          name="img-blur"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <div>
+        <label for="body-color">Color-Value</label>
+        <input type="color" name="body-color" value="#fe9605" />
+      </div>
+    </div>
+    <p class="box-shadow-info">
+      box-shadow:<span class="box-shadow-horizontal-offset">0px</span>
+      <span class="box-shadow-vertical-offset">0px</span>
+      <span class="box-shadow-spread">0px</span>
+      <span class="box-shadow-color">Color-Value</span>
+    </p>
+    <p class="border-info">
+      border:<span class="border-width">0px</span>
+      <span class="border-type">None</span>
+      <span class="border-color">Color-Value</span>
+    </p>
+
+    <button class="reset-btn" value="0" data-color="#fe9605">RESET</button>
+    <!-- <div class="sentence">
+      <input
+        type="text"
+        class="user-input"
+        id="user-sentence"
+        name="user-sentence"
+      />
+      <label for="user-sentence">Enter any length of sentence</label>
+      <button class="submit-btn" id="send-btn-js" name="send-sentence-btn">
+        Send
+      </button>
+
+      <p class="sentence-display name-display"></p>
+    </div> -->
+
+    <!-- <div class="main-container">
+      <div class="main">
+        <header>
+          <div class="overlay-header">
+            <div class="inner-header">
+              <h2 class="title-header">Future is here</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                voluptatem iusto qui vero in nemo illum. Expedita impedit
+                maiores similique tempore. Culpa illo eveniet sit fuga hic, ab
+                odio quod?
+              </p>
+              <a href="#" class="btn-more">Read More</a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
